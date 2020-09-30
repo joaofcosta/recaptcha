@@ -4,7 +4,7 @@ defmodule Recaptcha.Mixfile do
   def project do
     [
       app: :recaptcha,
-      version: "3.0.0",
+      version: "3.0.1",
       elixir: ">= 1.9.0",
       description: description(),
       deps: deps(),
@@ -43,7 +43,7 @@ defmodule Recaptcha.Mixfile do
   defp deps do
     [
       {:httpoison, ">= 1.0.0"},
-      {:jason, "~> 1.1.0", optional: true},
+      {:jason, ">= 1.1.0", optional: true},
       {:credo, "~> 1.0", only: [:dev, :test], runtime: false},
       {:ex_doc, ">= 0.0.0", only: :dev},
       {:dialyxir, "~> 0.5", only: [:dev]},
